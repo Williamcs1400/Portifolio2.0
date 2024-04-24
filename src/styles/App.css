@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.header-text-item {
+  font-size: 24px;
+  font-weight: 200;
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+.header-text-item:hover {
+  cursor: pointer;
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
