@@ -8,7 +8,7 @@ import Projects from "./sections/projects";
 import Contact from "./sections/contact";
 
 function App() {
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(true);
     const [height, setHeight] = useState(window.innerHeight);
 
     const handleWindowSizeChange = () => {
@@ -17,13 +17,12 @@ function App() {
     }
 
     useEffect(() => {
+        handleWindowSizeChange();
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
             window.removeEventListener('resize', handleWindowSizeChange);
         }
     }, []);
-
-    console.log(height);
 
     function handleScroll(offset) {
         window.scrollTo({top: height * offset, behavior: 'smooth'});
