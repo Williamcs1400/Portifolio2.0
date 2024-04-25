@@ -5,7 +5,7 @@ import experience from '../assets/icons/experience.png';
 import { aboutText } from '../util/texts';
 import '../styles/App.css';
 
-const About = () => {
+const About = ({ref}) => {
     const [isMobile, setIsMobile] = useState(false);
     const [fullstackXP, setFullstackXP] = useState(new Date().getFullYear() - 2021 + 1);
     const [mobileXP, setMobileXP] = useState(new Date().getFullYear() - 2020 + 1);

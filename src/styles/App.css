@@ -97,3 +97,27 @@
   font-weight: 200;
   margin-left: 10px;
 }
+
+.experience-page {
+  height: 100vh;
+  background: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-page {
+  height: 100vh;
+  background: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-page {
+  height: 100vh;
+  background: sienna;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

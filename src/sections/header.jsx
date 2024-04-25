@@ -10,8 +10,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
 import '../styles/App.css';
+import {ScrollRef} from "../util/ScrollRef";
 
-const Header = () => {
+const Header = ({handleScroll}) => {
     const [isMobile, setIsMobile] = useState(false);
     const [open, setOpen] = useState(false);
 
@@ -33,10 +34,10 @@ const Header = () => {
     
     const desktopHeader = (
         <div style={{ display: 'flex', flexDirection: 'row', marginRight: 100 }}>
-            <h1 className='header-text-item'>Sobre</h1>
-            <h1 className='header-text-item'>Experiência</h1>
-            <h1 className='header-text-item'>Projetos</h1>
-            <h1 className='header-text-item'>Contato</h1>
+            <h1 className='header-text-item' onClick={() => handleScroll(ScrollRef.About)}>Sobre</h1>
+            <h1 className='header-text-item' onClick={() => handleScroll(ScrollRef.Experience)}>Experiência</h1>
+            <h1 className='header-text-item' onClick={() => handleScroll(ScrollRef.Projects)}>Projetos</h1>
+            <h1 className='header-text-item' onClick={() => handleScroll(ScrollRef.Contact)}>Contato</h1>
         </div>
     );
 
@@ -54,7 +55,7 @@ const Header = () => {
             {['Sobre', 'Experiência', 'Projetos', 'Contato'].map((text, index) => (
               <ListItem key={text} disablePadding>
                 <ListItemButton>
-                  <ListItemText className='header-text-item' primary={text} style={{fontSize: 50}} />
+                  <ListItemText className='header-text-item' primary={text} style={{fontSize: 50}} onClick={() => handleScroll(index + 1)} />
                 </ListItemButton>
               </ListItem>
             ))}
