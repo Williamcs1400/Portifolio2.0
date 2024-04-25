@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react';
+import {React} from 'react';
 import meabout from '../assets/me-about.jpg';
 import education from '../assets/icons/education.png';
 import experience from '../assets/icons/experience.png';
@@ -6,8 +6,8 @@ import {aboutText} from '../util/texts';
 import '../styles/App.css';
 
 const About = ({isMobile}) => {
-    const [fullstackXP, setFullstackXP] = useState(new Date().getFullYear() - 2021 + 1);
-    const [mobileXP, setMobileXP] = useState(new Date().getFullYear() - 2020 + 1);
+    const fullstackXP = new Date().getFullYear() - 2021 + 1;
+    const mobileXP= new Date().getFullYear() - 2020 + 1;
 
     return (
         <div className='about-page'

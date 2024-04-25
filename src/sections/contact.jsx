@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react';
+import {React} from 'react';
 import email from '../assets/icons/email.png';
 import whatsapp from '../assets/icons/whatsapp.png';
 import github from '../assets/icons/github.png';
@@ -7,7 +7,6 @@ import {emailAdress, githubUrl, linkedinUrl, wppUrl} from "../util/texts";
 
 import '../styles/App.css';
 import {toast, Toaster} from "react-hot-toast";
-import {desktopHeader} from "./header";
 import {ScrollRef} from "../util/ScrollRef";
 
 const Contact = ({isMobile, handleScroll}) => {
@@ -51,7 +50,6 @@ const Contact = ({isMobile, handleScroll}) => {
             </div>
 
             {footer}
-
 
             <text className='contact-copyrigth-text'>
                 Copyrigth © {new Date().getFullYear()} William Coelho da Silva

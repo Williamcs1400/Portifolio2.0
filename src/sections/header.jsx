@@ -1,5 +1,4 @@
-import { React, useEffect, useState } from 'react';
-import ReactDOM from 'react-dom/client';
+import { React, useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import hamburger from '../assets/icons/hamburger.png';
 import Box from '@mui/material/Box';

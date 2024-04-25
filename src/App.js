@@ -1,5 +1,5 @@
 import './styles/App.css';
-import {React, useEffect, useRef, useState} from 'react';
+import {React, useEffect, useState} from 'react';
 import Home from './sections/home';
 import Header from './sections/header';
 import About from './sections/about';
@@ -9,7 +9,6 @@ import Contact from "./sections/contact";
 
 function App() {
     const [isMobile, setIsMobile] = useState(false);
-    const [aboutRef, setAboutRef] = useState(useRef(null));
     const [height, setHeight] = useState(window.innerHeight);
 
     const handleWindowSizeChange = () => {
