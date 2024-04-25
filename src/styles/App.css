@@ -108,22 +108,70 @@
 
 .experience-page {
   height: 100vh;
-  background: beige;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .experience-title {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
   color: #000;
 }
 
 .experience-subtitle {
   font-size: 16px;
+  font-weight: 400;
+  color: #626262;
+}
+
+.experience-box {
+  width: 40%;
+  border: 2px solid #DDDDDD;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.experience-sub-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 170px;
+  text-align: left;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.experience-box-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #626262;
+}
+
+.experience-box-content {
+  font-size: 16px;
   font-weight: 200;
   color: #626262;
+}
+
+.experience-sub-box-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  white-space: nowrap;
+}
+
+.experience-sub-box-content {
+  font-size: 14px;
+  font-weight: 00;
+  color: #626262;
+  white-space: nowrap;
 }
 
 /* ---------------- PROJECTS ---------------- */
