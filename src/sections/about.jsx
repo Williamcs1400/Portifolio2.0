@@ -1,8 +1,8 @@
-import { React, useEffect, useState } from 'react';
+import {React, useEffect, useState} from 'react';
 import meabout from '../assets/me-about.jpg';
 import education from '../assets/icons/education.png';
 import experience from '../assets/icons/experience.png';
-import { aboutText } from '../util/texts';
+import {aboutText} from '../util/texts';
 import '../styles/App.css';
 
 const About = ({isMobile}) => {
@@ -10,11 +10,21 @@ const About = ({isMobile}) => {
     const [mobileXP, setMobileXP] = useState(new Date().getFullYear() - 2020 + 1);
 
     return (
-        <div className='about-page' style={{ flexDirection: 'column', justifyContent: isMobile ? 'flex-start' : 'center' }}>
-            <text style={{ fontWeight: '400', fontSize: 16, color: '#626262' }}>Mais um pouco</text>
-            <text style={{ fontWeight: '600', fontSize: 36 }}>Sobre mim</text>
-            <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'center', alignItems: 'center', minWidth: isMobile ? '100%' : '60%', maxWidth: isMobile ? '100%' : '90%', marginTop: isMobile ? 0 : 150 }}>
-            <img src={meabout} alt='me' width={300} height={300} style={{ borderRadius: '10%', boxShadow: '10px 10px 10px 0px #DDDDDD', marginInline: 50 }} />
+        <div className='about-page'
+             style={{flexDirection: 'column', justifyContent: isMobile ? 'flex-start' : 'center'}}>
+            <text style={{fontWeight: '400', fontSize: 16, color: '#626262'}}>Mais um pouco</text>
+            <text style={{fontWeight: '600', fontSize: 36}}>Sobre mim</text>
+            <div style={{
+                display: 'flex',
+                flexDirection: isMobile ? 'column' : 'row',
+                justifyContent: 'center',
+                alignItems: 'center',
+                minWidth: isMobile ? '100%' : '60%',
+                maxWidth: isMobile ? '100%' : '90%',
+                marginTop: isMobile ? 0 : 150
+            }}>
+                <img src={meabout} alt='me' width={300} height={300}
+                     style={{borderRadius: '10%', boxShadow: '10px 10px 10px 0px #DDDDDD', marginInline: 50}}/>
                 <div style={{
                     marginTop: isMobile ? 10 : 0,
                     display: 'flex',

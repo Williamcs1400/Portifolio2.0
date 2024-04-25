@@ -37,8 +37,8 @@ function App() {
                 <Home isMobile={isMobile}/>
                 <About isMobile={isMobile}/>
                 <Experience isMobile={isMobile}/>
-                <Projects/>
-                <Contact/>
+                <Projects isMobile={isMobile}/>
+                <Contact isMobile={isMobile} handleScroll={handleScroll}/>
             </header>
         </div>
     );

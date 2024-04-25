@@ -6,13 +6,12 @@ import linkedin from '../assets/icons/linkedin.png';
 import { Button } from '@mui/material';
 import '../styles/App.css';
 import cv from '../assets/SkillsAndAbilities.pdf';
+import {wppUrl} from "../util/texts";
 
 const Home = ({isMobile}) => {
     const [open, setOpen] = useState(false);
 
     // urls to redirect
-    const messageText = 'Oi, William, entrei no seu portfólio e gostaria de conversar com você!';
-    const wppUrl = 'whatsapp://send?text=' + messageText + '&phone=+5561993578834';
     const linkedinUrl = 'https://linkedin.com/in/william-coelho-b27521239';
     const githubUrl = 'https://github.com/Williamcs1400';
 
