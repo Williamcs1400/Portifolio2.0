@@ -178,12 +178,54 @@
 
 .projects-page {
     height: 100vh;
-    background: cadetblue;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     font-size: 10px;
+    flex-wrap: wrap;
+}
+
+.projects-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+}
+
+.projects-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #626262;
+}
+
+.projects-card-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2B2A2A;
+}
+
+.projects-card-content {
+    font-size: 14px;
+    font-weight: 200;
+    color: #626262;
+}
+
+.projects-card-button {
+    font-size: 20px;
+    font-weight: 200;
+    color: #626262;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-inline: 5px;
+    width: 100%;
+    border: 2px solid #3B3B3B;
+    border-radius: 40px;
+}
+
+.projects-card-button:hover {
+    cursor: pointer;
+    background-color: #3B3B3B;
+    color: white;
 }
 
 /* ---------------- CONTACT ---------------- */

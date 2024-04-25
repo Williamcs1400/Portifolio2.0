@@ -65,6 +65,7 @@ const Experience = ({isMobile}) => {
                     <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
                         {subBox('Spring', 'Alto')}
                         {subBox('Kafka', 'Médio')}
+                        {subBox('Flask', 'Médio')}
                         {subBox('Docker', 'Médio')}
                         {subBox('PostgreSQL', 'Alto')}
                         {subBox('MySQL', 'Alto')}
