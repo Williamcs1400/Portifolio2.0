@@ -7,8 +7,7 @@ import { Button } from '@mui/material';
 import '../styles/App.css';
 import cv from '../assets/SkillsAndAbilities.pdf';
 
-const Home = () => {
-    const [isMobile, setIsMobile] = useState(false);
+const Home = ({isMobile}) => {
     const [open, setOpen] = useState(false);
 
     // urls to redirect
@@ -16,18 +15,6 @@ const Home = () => {
     const wppUrl = 'whatsapp://send?text=' + messageText + '&phone=+5561993578834';
     const linkedinUrl = 'https://linkedin.com/in/william-coelho-b27521239';
     const githubUrl = 'https://github.com/Williamcs1400';
-
-    // listener to check if the window is resized (mobile or desktop)
-    const handleWindowSizeChange = () => {
-        setIsMobile(window.innerWidth <= 768);
-    }
-
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
 
     function openUrlInNewTab(url) {
         window.open(url, '_blank').focus();

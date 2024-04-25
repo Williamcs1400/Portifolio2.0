@@ -12,21 +12,8 @@ import ListItemText from '@mui/material/ListItemText';
 import '../styles/App.css';
 import {ScrollRef} from "../util/ScrollRef";
 
-const Header = ({handleScroll}) => {
-    const [isMobile, setIsMobile] = useState(false);
+const Header = ({handleScroll, isMobile}) => {
     const [open, setOpen] = useState(false);
-
-    // listener to check if the window is resized (mobile or desktop)
-    const handleWindowSizeChange = () => {
-        setIsMobile(window.innerWidth <= 768);
-    }
-
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
 
     const toggleDrawer = (newOpen) => () => {
         setOpen(newOpen);

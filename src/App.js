@@ -8,11 +8,13 @@ import Projects from "./sections/projects";
 import Contact from "./sections/contact";
 
 function App() {
+    const [isMobile, setIsMobile] = useState(false);
     const [aboutRef, setAboutRef] = useState(useRef(null));
     const [height, setHeight] = useState(window.innerHeight);
 
     const handleWindowSizeChange = () => {
         setHeight(window.innerHeight);
+        setIsMobile(window.innerWidth <= 768);
     }
 
     useEffect(() => {
@@ -31,10 +33,10 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <Header handleScroll={handleScroll}/>
-                <Home/>
-                <About/>
-                <Experience/>
+                <Header handleScroll={handleScroll} isMobile={isMobile}/>
+                <Home isMobile={isMobile}/>
+                <About isMobile={isMobile}/>
+                <Experience isMobile={isMobile}/>
                 <Projects/>
                 <Contact/>
             </header>

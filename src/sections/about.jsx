@@ -5,21 +5,9 @@ import experience from '../assets/icons/experience.png';
 import { aboutText } from '../util/texts';
 import '../styles/App.css';
 
-const About = ({ref}) => {
-    const [isMobile, setIsMobile] = useState(false);
+const About = ({isMobile}) => {
     const [fullstackXP, setFullstackXP] = useState(new Date().getFullYear() - 2021 + 1);
     const [mobileXP, setMobileXP] = useState(new Date().getFullYear() - 2020 + 1);
-
-    const handleWindowSizeChange = () => {
-        setIsMobile(window.innerWidth <= 768);
-    }
-
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
 
     return (
         <div className='about-page' style={{ flexDirection: 'column', justifyContent: isMobile ? 'flex-start' : 'center' }}>
@@ -28,7 +16,7 @@ const About = ({ref}) => {
             <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'center', alignItems: 'center', minWidth: isMobile ? '100%' : '60%', maxWidth: isMobile ? '100%' : '90%', marginTop: isMobile ? 0 : 150 }}>
             <img src={meabout} alt='me' width={300} height={300} style={{ borderRadius: '10%', boxShadow: '10px 10px 10px 0px #DDDDDD', marginInline: 50 }} />
                 <div style={{
-                    marginTop: isMobile ? 50 : 0,
+                    marginTop: isMobile ? 10 : 0,
                     display: 'flex',
                     flexDirection: 'row',
                     justifyContent: isMobile ? 'center' : 'left',

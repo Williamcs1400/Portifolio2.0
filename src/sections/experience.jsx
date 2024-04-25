@@ -1,11 +1,17 @@
 import {React, useEffect, useState} from 'react';
 import '../styles/App.css';
 
-const Experience = () => {
+const Experience = ({isMobile}) => {
+    // const [isMobile, setIsMobile] = useState(false);
+
+    console.log(isMobile);
+
+
 
     return (
         <div className='experience-page'>
-            <h1>Experience</h1>
+            <text className='experience-subtitle'>Em quais tecnologias eu possuo</text>
+            <text className='experience-title'>Experiência</text>
         </div>
     );
 }
