@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portifolio2.0/static/css/main.aca810f7.css",
-    "main.js": "/Portifolio2.0/static/js/main.525ed8cb.js",
+    "main.css": "/Portifolio2.0/static/css/main.943b1d35.css",
+    "main.js": "/Portifolio2.0/static/js/main.28c610aa.js",
     "static/media/me.png": "/Portifolio2.0/static/media/me.ed439ae154aec5909708.png",
     "static/media/me-about.jpg": "/Portifolio2.0/static/media/me-about.657137d217bb68560d96.jpg",
     "static/media/SkillsAndAbilities.pdf": "/Portifolio2.0/static/media/SkillsAndAbilities.b4355a11369696b48814.pdf",
@@ -15,11 +15,11 @@
     "static/media/experience.png": "/Portifolio2.0/static/media/experience.868a03864d796bf125d8.png",
     "static/media/linkedin.png": "/Portifolio2.0/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/Portifolio2.0/index.html",
-    "main.aca810f7.css.map": "/Portifolio2.0/static/css/main.aca810f7.css.map",
-    "main.525ed8cb.js.map": "/Portifolio2.0/static/js/main.525ed8cb.js.map"
+    "main.943b1d35.css.map": "/Portifolio2.0/static/css/main.943b1d35.css.map",
+    "main.28c610aa.js.map": "/Portifolio2.0/static/js/main.28c610aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.aca810f7.css",
-    "static/js/main.525ed8cb.js"
+    "static/css/main.943b1d35.css",
+    "static/js/main.28c610aa.js"
   ]
 }
