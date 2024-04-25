@@ -35,17 +35,18 @@ const About = ({isMobile}) => {
                     <div className="about-box" style={{maxWidth: isMobile ? '200px' : "50%"}}>
                         <img src={education} alt='education' width={35} height={35}/>
                         <text className="about-box-title">Educação</text>
-                        <text className="about-box-content">Formado em Ciência da Computação pela Universidade de
+                        <text className="about-box-content" style={{fontSize: isMobile ? 10 : 16}}>
+                            Formado em Ciência da Computação pela Universidade de
                             Brasília (UnB) em 2023
                         </text>
                     </div>
                     <div className="about-box">
                         <img src={experience} alt='experience' width={35} height={35}/>
                         <text className="about-box-title">Experiência</text>
-                        <text className="about-box-content">+{fullstackXP} anos Dev Full Stack</text>
-                        <text className="about-box-content">+{mobileXP} anos Dev Mobile</text>
+                        <text className="about-box-content" style={{fontSize: isMobile ? 10 : 16}}>+{fullstackXP} anos Dev Full Stack</text>
+                        <text className="about-box-content" style={{fontSize: isMobile ? 10 : 16}}>+{mobileXP} anos Dev Mobile</text>
                     </div>
-                    <text className="about-text">{aboutText}</text>
+                    <text className="about-text" style={{fontSize: isMobile ? 12 : 15}}>{aboutText}</text>
                 </div>
             </div>
         </div>

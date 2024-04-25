@@ -75,7 +75,7 @@
 }
 
 .about-box {
-    width: 40%;
+    width: 30%;
     border: 2px solid #DDDDDD;
     border-radius: 30px;
     padding: 10px;
@@ -130,13 +130,14 @@
 
 .experience-box {
     width: 40%;
+    min-width: 120px;
     border: 2px solid #DDDDDD;
     border-radius: 30px;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     flex-wrap: wrap;
 }
 
@@ -147,7 +148,7 @@
     width: 170px;
     text-align: left;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 5px
 }
 
 .experience-box-title {
@@ -237,13 +238,12 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     background: #F6F6F6;
 }
 
 .contact-box {
-    width: 40%;
+    min-width: 100px;
     border: 2px solid #DDDDDD;
     border-radius: 20px;
     padding: 10px;
@@ -273,7 +273,7 @@
     font-size: 16px;
     font-weight: 200;
     color: #000;
-    margin-inline: 20px;
+    margin-inline: 10px;
 }
 
 .contact-text-info:hover {

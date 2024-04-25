@@ -5,13 +5,13 @@ import certificate from '../assets/icons/certificate.png';
 const Experience = ({isMobile}) => {
 
     const subBox = (title, content) => (
-        <div className='experience-sub-box'>
+        <div className='experience-sub-box' style={{marginLeft: 10}}>
             <div style={{width: 'fit-content', marginRight: 10}}>
                 <img src={certificate} alt='certificate' width={30} height={30}/>
             </div>
             <div style={{width: '40%', display: 'flex', flexDirection: 'column', textAlign: 'left'}}>
-                <text className='experience-sub-box-title'>{title}</text>
-                <text className='experience-sub-box-content'>{content}</text>
+                <text className='experience-sub-box-title' style={{fontSize: isMobile ? 12 : 16}}>{title}</text>
+                <text className='experience-sub-box-content' style={{fontSize: isMobile ? 8 : 14}}>{content}</text>
             </div>
         </div>
     );
@@ -27,7 +27,7 @@ const Experience = ({isMobile}) => {
                 flexWrap: 'wrap'
             }}>
                 <div className='experience-box'>
-                    <text className='experience-box-title'>Frontend</text>
+                    <text className='experience-box-title' style={{fontSize: isMobile ? 10 : 20}}>Frontend</text>
                     <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap'}}>
                         {subBox('HTML', 'Alto')}
                         {subBox('CSS', 'Alto')}

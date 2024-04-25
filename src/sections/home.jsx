@@ -33,7 +33,7 @@ const Home = ({isMobile}) => {
                             color: '#3B3B3B',
                             border: '2px solid #3B3B3B',
                             borderRadius: 20,
-                            fontSize: 24
+                            fontSize: 22
                         }}
                         onClick={openCV}
                     >
@@ -46,7 +46,8 @@ const Home = ({isMobile}) => {
                             color: 'white',
                             backgroundColor: '#3B3B3B',
                             borderRadius: 20,
-                            fontSize: 24
+                            fontSize: 22,
+                            textWrap: 'nowrap'
                         }}
                         onClick={() => openUrlInNewTab(wppUrl)}
                     >

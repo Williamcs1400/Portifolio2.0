@@ -29,24 +29,24 @@ const Contact = ({isMobile, handleScroll}) => {
     );
 
     return (
-        <div className='contact-page' style={{justifyContent: isMobile ? 'flex-start' : 'center'}}>
+        <div className='contact-page' style={{justifyContent: isMobile ? 'flex-start' : 'center', display: 'flex', flexDirection: 'column'}}>
             <text className='contact-subtitle'>Como fazer</text>
             <text className='contact-title'>Contato</text>
             <div className='contact-box' style={{width: isMobile ? '80%' : '30%'}} onClick={openSendEmail}>
                 <img src={email} alt='email' width={50} height={50} style={{marginRight: 20}}/>
-                <text className='contact-text'>{emailAdress}</text>
+                <text className='contact-text' style={{fontSize: isMobile ? 14 : 26}}>{emailAdress}</text>
             </div>
             <div className='contact-box' style={{width: isMobile ? '80%' : '30%'}} onClick={() => openUrl(wppUrl)}>
                 <img src={whatsapp} alt='whatsapp' width={50} height={50} style={{marginRight: 20}}/>
-                <text className='contact-text'>Me chame no WhatsApp</text>
+                <text className='contact-text' style={{fontSize: isMobile ? 14 : 26}}>Me chame no WhatsApp</text>
             </div>
             <div className='contact-box' style={{width: isMobile ? '80%' : '30%'}} onClick={() => openUrl(linkedinUrl)}>
                 <img src={linkedin} alt='linkedin' width={50} height={50} style={{marginRight: 20}}/>
-                <text className='contact-text'>Me adicione no LinkedIn</text>
+                <text className='contact-text' style={{fontSize: isMobile ? 14 : 26}}>Me adicione no LinkedIn</text>
             </div>
             <div className='contact-box' style={{width: isMobile ? '80%' : '30%'}} onClick={() => openUrl(githubUrl)}>
                 <img src={github} alt='github' width={50} height={50} style={{marginRight: 20}}/>
-                <text className='contact-text'>Me siga no GitHub</text>
+                <text className='contact-text' style={{fontSize: isMobile ? 14 : 26}}>Me siga no GitHub</text>
             </div>
 
             {footer}
