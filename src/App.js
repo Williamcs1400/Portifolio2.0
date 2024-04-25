@@ -2,6 +2,7 @@ import './styles/App.css';
 import { React, useEffect, useState } from 'react';
 import Home from './sections/home';
 import Header from './sections/header';
+import About from './sections/about';
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
-        <Home />
+        <Home/>
+        <About />
       </header>
     </div>
   );

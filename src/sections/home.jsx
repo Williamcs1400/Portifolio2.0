@@ -1,17 +1,21 @@
 import { React, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import me from '../assets/me.png';
+import github from '../assets/icons/github.png';
+import linkedin from '../assets/icons/linkedin.png';
 import { Button } from '@mui/material';
 import '../styles/App.css';
 import cv from '../assets/SkillsAndAbilities.pdf';
-
 
 const Home = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [open, setOpen] = useState(false);
 
+    // urls to redirect
     const messageText = 'Oi, William, entrei no seu portfólio e gostaria de conversar com você!';
-    const url = 'whatsapp://send?text=' + messageText + '&phone=+5561993578834';
+    const wppUrl = 'whatsapp://send?text=' + messageText + '&phone=+5561993578834';
+    const linkedinUrl = 'https://linkedin.com/in/william-coelho-b27521239';
+    const githubUrl = 'https://github.com/Williamcs1400';
 
     // listener to check if the window is resized (mobile or desktop)
     const handleWindowSizeChange = () => {
@@ -25,7 +29,7 @@ const Home = () => {
         }
     }, []);
 
-    function openWppInNewTab() {
+    function openUrlInNewTab(url) {
         window.open(url, '_blank').focus();
     }
 
@@ -64,11 +68,14 @@ const Home = () => {
                             borderRadius: 20,
                             fontSize: 24
                         }}
-                        onClick={openWppInNewTab}
+                        onClick={() => openUrlInNewTab(wppUrl)}
                     >
                         Fale Comigo
                     </Button>
-
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'row', marginTop: 20 }}>
+                    <img src={github} alt='github' width={40} height={40} className='home-icon' onClick={() => openUrlInNewTab(githubUrl)} />
+                    <img src={linkedin} alt='linkedin' width={40} height={40} className='home-icon' onClick={() => openUrlInNewTab(linkedinUrl)} />
                 </div>
             </div>
         </div>

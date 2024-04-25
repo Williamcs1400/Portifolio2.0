@@ -52,3 +52,48 @@
   height: calc(100vh - 100px);
 }
 
+.about-page {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+}
+
+.home-icon {
+  margin-inline: 10px;
+}
+
+.home-icon:hover {
+  cursor: pointer;
+}
+
+.about-box {
+  width: 40%;
+  border: 2px solid #DDDDDD;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-box-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.about-box-content {
+  font-size: 16px;
+  font-weight: 200;
+  color: #626262;
+}
+
+.about-text {
+  max-width: 90%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 200;
+  margin-left: 10px;
+}

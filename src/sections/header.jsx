@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import IconButton from '@mui/material/IconButton';
-import hamburger from '../assets/hamburger.png';
+import hamburger from '../assets/icons/hamburger.png';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -65,7 +65,7 @@ const Header = () => {
     return (
         <div style={{ marginTop: '50', display: 'flex', justifyContent: 'space-between', minHeight: 100, maxHeight: 100 }}>
             <div>
-                <h1 className='header-text' style={{marginLeft: isMobile ? 10 : 100}}>William Coelho</h1>
+                <h1 className='header-text' style={{marginLeft: isMobile ? 40 : 100}}>William Coelho</h1>
             </div>
             {isMobile ? mobileHeader : desktopHeader}
             <Drawer open={open} onClose={toggleDrawer(false)} anchor='right'>
