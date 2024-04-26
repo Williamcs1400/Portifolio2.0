@@ -16,9 +16,10 @@ const Home = ({isMobile}) => {
     function openCV() {
         window.open(cv);
     }
+    // calc for mobile is 100% - 100, for desktop is 100vh - 100
 
     return (
-        <div className='home-page' style={{ flexDirection: isMobile ? 'column' : 'row' }}>
+        <div className='home-page' style={{ flexDirection: isMobile ? 'column' : 'row', height: isMobile ? 'calc(100% - 100px)' : 'calc(100vh - 100px)' }}>
             <img src={me} alt='me' width={300} height={300} style={{ borderRadius: '50%', boxShadow: '10px 10px 10px 0px #DDDDDD', marginInline: 50 }} />
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginInline: 50, marginTop: isMobile ? 50 : 0 }}>
                 <text style={{ fontWeight: '400', fontSize: 16, color: '#626262' }}>Olá, eu sou</text>

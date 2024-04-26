@@ -29,7 +29,7 @@ const Contact = ({isMobile, handleScroll}) => {
     );
 
     return (
-        <div className='contact-page' style={{justifyContent: isMobile ? 'flex-start' : 'center', display: 'flex', flexDirection: 'column'}}>
+        <div className='contact-page' style={{justifyContent: isMobile ? 'flex-start' : 'center', display: 'flex', flexDirection: 'column', height: isMobile ? '100%' : '100vh'}}>
             <text className='contact-subtitle'>Como fazer</text>
             <text className='contact-title'>Contato</text>
             <div className='contact-box' style={{width: isMobile ? '80%' : '30%'}} onClick={openSendEmail}>

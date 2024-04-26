@@ -52,7 +52,7 @@ const Header = ({handleScroll, isMobile}) => {
     return (
         <div style={{ marginTop: '50', display: 'flex', justifyContent: 'space-between', minHeight: 100, maxHeight: 100 }}>
             <div>
-                <h1 className='header-text' style={{marginLeft: isMobile ? 40 : 100}}>William Coelho</h1>
+                <h1 className='header-text' style={{marginLeft: isMobile ? 40 : 100, fontSize: isMobile ? 20 : 24, textWrap: 'nowrap'}}>William Coelho</h1>
             </div>
             {isMobile ? mobileHeader : desktopHeader}
             <Drawer open={open} onClose={toggleDrawer(false)} anchor='right'>

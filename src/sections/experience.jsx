@@ -17,7 +17,7 @@ const Experience = ({isMobile}) => {
     );
 
     return (
-        <div className='experience-page' style={{alignContent: isMobile ? 'flex-start' : 'center'}}>
+        <div className='experience-page' style={{alignContent: isMobile ? 'flex-start' : 'center', height: isMobile ? '100%' : '100vh'}}>
             <text className='experience-subtitle'>Em quais tecnologias eu possuo</text>
             <text className='experience-title'>Experiência</text>
             <div style={{

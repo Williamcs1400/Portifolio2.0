@@ -68,7 +68,7 @@ const Projects = ({isMobile}) => {
     console.log(activeStep)
 
     return (
-        <div className='projects-page'>
+        <div className='projects-page' style={{height: isMobile ? '100%' : '100vh'}}>
             <text className='projects-subtitle'>Estes são alguns dos meus</text>
             <text className='projects-title'>Projetos</text>
             <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap'}}>

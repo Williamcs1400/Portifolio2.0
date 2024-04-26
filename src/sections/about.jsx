@@ -11,7 +11,7 @@ const About = ({isMobile}) => {
 
     return (
         <div className='about-page'
-             style={{flexDirection: 'column', justifyContent: isMobile ? 'flex-start' : 'center'}}>
+             style={{flexDirection: 'column', justifyContent: isMobile ? 'flex-start' : 'center', height: isMobile ? '100%' : '100vh'}}>
             <text style={{fontWeight: '400', fontSize: 16, color: '#626262'}}>Mais um pouco</text>
             <text style={{fontWeight: '600', fontSize: 36}}>Sobre mim</text>
             <div style={{
@@ -20,7 +20,7 @@ const About = ({isMobile}) => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 minWidth: isMobile ? '100%' : '60%',
-                maxWidth: isMobile ? '100%' : '90%',
+                maxWidth: isMobile ? '100%' : '60%',
                 marginTop: isMobile ? 0 : 150
             }}>
                 <img src={meabout} alt='me' width={300} height={300}
